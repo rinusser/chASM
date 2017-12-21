@@ -1,8 +1,48 @@
 # Synopsis
 
-An extension for PHP, written in NASM.
+An extension for PHP, written in Assembly.
 
 The sources are hosted on [GitHub](https://github.com/rinusser/chASM).
+
+# Wait, what?
+
+Yes, you read right: this is a PHP extension, that, aside from bootstrap code necessary for the build system, is
+compiled with NASM.
+
+If you're looking for a sensible rationale as to why this PHP extension exists: don't bother, you won't find any.
+
+The main reason I wrote this was because mixing PHP and Assembly came up in a joke and sounded ridiculously useless.
+Then I thought "wait a minute.." and long story short, here it is. If it helps, consider this a proof-of-concept of
+writing Assembly code that can be invoked in a PHP script.
+
+
+# Requirements
+
+* a 64-bit version of PHP 7 (tested with 7.0.18)
+* a 64-bit Linux (tested with Ubuntu 17.04)
+* NASM (tested with 2.12.02)
+
+
+# Installation
+
+see [INSTALL.md](https://github.com/rinusser/chASM/blob/master/INSTALL.md).
+
+
+# Usage
+
+If the extension is loaded correctly you can call the chasm\_\*() functions in your PHP code, e.g.:
+
+    printf("cpuid vendor id: %s\n",chasm_vendorid());
+
+Currently the most useful examples are in chasm.php.
+
+
+# Tests
+
+The chasm.php file can show whether the extension is loaded and which module version (C bootstrap or final NASM) is
+active. The installation instructions (INSTALL.md) show how to validate the setup.
+
+Currently there's only one .phpt module testcase that checks whether the extension has been loaded.
 
 
 # Legal
