@@ -59,7 +59,7 @@ function run_c_tests()
 
 
 if(!extension_loaded($module))
-	dl('chasm.'.PHP_SHLIB_SUFFIX);
+  dl('chasm.'.PHP_SHLIB_SUFFIX);
 
 $functions=get_extension_funcs($module);
 
@@ -76,4 +76,4 @@ if(extension_loaded($module))
     run_asm_tests();
 }
 else
-	echo "Module $module is not compiled into PHP",$nl;
+  echo "Module $module is not compiled into PHP",$nl;

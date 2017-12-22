@@ -18,9 +18,11 @@ writing Assembly code that can be invoked in a PHP script.
 
 # Requirements
 
+* a 64-bit x86 processor (physical or virtual)
+* a 64-bit operating system using the System V calling convention, e.g. Linux (tested with Ubuntu 17.04)
 * a 64-bit version of PHP 7 (tested with 7.0.18)
-* a 64-bit Linux (tested with Ubuntu 17.04)
 * NASM (tested with 2.12.02)
+* build tools for PHP
 
 
 # Installation

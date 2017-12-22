@@ -16,11 +16,11 @@ extern zend_module_entry chasm_module_entry;
 #define PHP_CHASM_VERSION "0.06"
 
 #ifdef PHP_WIN32
-#	define PHP_CHASM_API __declspec(dllexport)
+# define PHP_CHASM_API __declspec(dllexport)
 #elif defined(__GNUC__) && __GNUC__ >= 4
-#	define PHP_CHASM_API __attribute__ ((visibility("default")))
+# define PHP_CHASM_API __attribute__ ((visibility("default")))
 #else
-#	define PHP_CHASM_API
+# define PHP_CHASM_API
 #endif
 
 #ifdef ZTS
