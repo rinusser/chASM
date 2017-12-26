@@ -1,7 +1,7 @@
 --TEST--
-Check for asm presence
+Check for chASM presence
 --SKIPIF--
-<?php if (!extension_loaded("chasm")) print "skip"; ?>
+<?php if (!extension_loaded('chasm')) print 'skip'; ?>
 --FILE--
 <?php
 echo "chASM extension is available";

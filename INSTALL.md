@@ -36,6 +36,14 @@ output something like this:
 
     The C module was compiled and loaded successfully.
 
+The same can be achieved by running the tests (e.g. `make test TESTS=ext/chasm`), somewhere in the middle it should say:
+
+    Running selected tests.
+    PASS Check for chASM presence [ext/chasm/tests/01_availability.phpt]
+    PASS Check if C bootstrap stage works, if it's loaded [ext/chasm/tests/10_c_bootstrap.phpt]
+
+Other tests should be skipped at this point.
+
 ### Hooking the Assembly Module
 
 Once the C module works you'll need to prepare the linking environment:

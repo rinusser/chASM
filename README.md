@@ -4,6 +4,7 @@ An extension for PHP, written in Assembly.
 
 The sources are hosted on [GitHub](https://github.com/rinusser/chASM).
 
+
 # Wait, what?
 
 Yes, you read right: this is a PHP extension, that, aside from bootstrap code necessary for the build system, is
@@ -42,9 +43,9 @@ Currently the most useful examples are in chasm.php.
 # Tests
 
 The chasm.php file can show whether the extension is loaded and which module version (C bootstrap or final NASM) is
-active. The installation instructions (INSTALL.md) show how to validate the setup.
+active. There are also .phpt test cases to verify the module's features automatically.
 
-Currently there's only one .phpt module testcase that checks whether the extension has been loaded.
+The installation instructions (INSTALL.md) show how to validate the setup.
 
 
 # Legal
