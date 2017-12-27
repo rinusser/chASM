@@ -2,6 +2,10 @@
 Check if C bootstrap stage works, if it's loaded
 --SKIPIF--
 <?php
+/**
+ * Checks if the chASM extension is loaded, if it looks like the C bootstrap stage is active and whether that works.
+ */
+
 if(extension_loaded('chasm'))
 {
   $functions=get_extension_funcs('chasm');
