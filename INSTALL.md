@@ -88,7 +88,7 @@ most important of all, not crash horribly.
 
 There are also tests you can run from the PHP sources root with:
 
-    make test TESTS=ext/chasm
+    $ make test TESTS=ext/chasm
 
 The "10\_c\_bootstrap.phpt" test should be skipped, every other test should pass. As of writing this the test runner
 should have found 6, skipped 1 and passed 5 tests.
