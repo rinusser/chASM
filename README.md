@@ -7,8 +7,7 @@ The sources are hosted on [GitHub](https://github.com/rinusser/chASM).
 
 # Wait, what?
 
-Yes, you read right: this is a PHP extension, that, aside from bootstrap code necessary for the build system, is
-compiled with NASM.
+Yes, you read right: this is a PHP extension that's built with NASM.
 
 If you're looking for a sensible rationale as to why this PHP extension exists: don't bother, you won't find any.
 
