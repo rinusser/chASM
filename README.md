@@ -56,7 +56,7 @@ corruption, delete your operating system, set fire to your computer and cause bo
 
 ### Copyright
 
-Copyright (C) 2017 Richard Nusser
+Copyright (C) 2017-2018 Richard Nusser
 
 ### License
 
